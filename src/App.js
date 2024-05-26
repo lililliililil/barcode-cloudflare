@@ -4,20 +4,31 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+      <nav className='navbar'>
+        <div className='navbar__logo'>
+        <i class="fa-solid fa-b"></i>
+          <a>barcode</a>
+        </div>
+
+        <ul className='navbar__menu'>
+          <li><a href='#'>Home</a></li>
+          <li><a href='#'>Project</a></li>
+          <li><a href='#'>SNS</a></li>
+        </ul>
+
+        <ul className='navbar__icons'>
+          <li><a href='https://discord.gg/UqcHmuy2wR'><i class="fa-brands fa-discord"></i></a></li>
+          <li><a href='https://github.com/lililliililil'><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+
+        <a href="#" class="navbar__toogleBtn">
+            <i class="fas fa-bars"></i>
         </a>
-      </header>
+      </nav>
+
+      <div className='testing_info'>
+        <h1>Unfortunately, this is the website is making. Please try to connect again later.</h1>
+      </div>
     </div>
   );
 }

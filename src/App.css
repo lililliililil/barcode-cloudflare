@@ -1,38 +1,102 @@
-.App {
+body {
+  margin: 0;
+  font-family: Source Sans 3;
+  background: #f2f2f2;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.testing_info {
+  color: gray;
+  font-size: medium;
+  padding: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: dimgray;
+  padding: 8px 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar__logo {
+  font-size: 24px;
+  color: white;
+}
+
+.navbar__logo i {
+  color: gray;
+  padding-left: 10px;
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar__menu li {
+  padding: 8px 12px;
+}
+
+.navbar__menu li:hover{
+  background-color: gray;
+  border-radius: 6px;
+}
+
+.navbar__icons {
+  list-style: none;
+  color: white;
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar__icons li {
+  padding: 8px 12px;
+}
+
+.navbar__toogleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 8px 24px;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar__menu{
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+
+  .navbar__menu li {
+      width: 100%;
+      text-align: center;
+  }
+  .navbar__icons{
+  display: none;
+  justify-content: center;
+  width: 100%;
+  }
+
+  .navbar__toogleBtn {
+      display: block;
+  }
+  .navbar__menu.active,
+  .navbar__icons.active {
+      display: flex;
   }
 }
+
