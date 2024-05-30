@@ -29,7 +29,7 @@ function App() {
       </nav>
 
       <div className='testing_info'>
-        <h1>Unfortunately, this is the website is making. Please try to connect again later.</h1>
+        <h1>Unfortunately, this is website is making. Please try to connect again later.</h1>
       </div>
     </div>
   );
