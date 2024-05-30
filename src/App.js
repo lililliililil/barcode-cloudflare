@@ -3,6 +3,7 @@ import './App.css';
 
 function App() {
   return (
+    <div className="App">
       <nav className='navbar'>
         <div className='navbar__logo'>
         <i class="fa-solid fa-b"></i>
@@ -28,6 +29,7 @@ function App() {
       <div className='testing_info'>
         <h1>Unfortunately, this is the website is making. Please try to connect again later.</h1>
       </div>
+    </div>
   );
 }
 
