@@ -3,6 +3,18 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter, Route, Switch,Routes } from 'react-router-dom';
 
+window.onload = () => {
+  const toggleBtn = document.querySelector('.navbar__toogleBtn');
+  const menu = document.querySelector('.navbar__menu');
+  const icons = document.querySelector('.navbar__icons');
+
+  toggleBtn.addEventListener('click', () => {
+      menu.classList.toggle('active');
+      icons.classList.toggle('active');
+  });
+};
+
+
 function App() {
   return (
     <div className="App">
@@ -27,7 +39,6 @@ function App() {
             <i class="fas fa-bars"></i>
         </a>
       </nav>
-
       <div className='testing_info'>
         <h1>Unfortunately, this is website is making. Please try to connect again later.</h1>
       </div>
