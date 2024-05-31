@@ -14,7 +14,6 @@ window.onload = () => {
   });
 };
 
-
 function App() {
   return (
     <div className="App">
