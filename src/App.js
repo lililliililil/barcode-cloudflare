@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import { BrowserRouter, Route, Switch,Routes } from 'react-router-dom';
+import { render } from '@testing-library/react';
 
 window.onload = () => {
   const toggleBtn = document.querySelector('.navbar__toogleBtn');
