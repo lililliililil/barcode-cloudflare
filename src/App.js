@@ -1,49 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-import React from 'react';
-import { BrowserRouter, Route, Switch,Routes } from 'react-router-dom';
-import { render } from '@testing-library/react';
-
-window.onload = () => {
-  const toggleBtn = document.querySelector('.navbar__toogleBtn');
-  const menu = document.querySelector('.navbar__menu');
-  const icons = document.querySelector('.navbar__icons');
-
-  toggleBtn.addEventListener('click', () => {
-      menu.classList.toggle('active');
-      icons.classList.toggle('active');
-  });
-};
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './components/Home';
+import Project from './components/Project';
+import SNS from './components/SNS';
 
 function App() {
-  return (
-    <div className="App">
-      <nav className='navbar'>
-        <div className='navbar__logo'>
-        <i class="fa-solid fa-b"></i>
-          <a>barcode</a>
-        </div>
-
-        <ul className='navbar__menu'>
-          <li><a href='#'>Home</a></li>
-          <li><a href='#'>Project</a></li>
-          <li><a href='#'>SNS</a></li>
-        </ul>
-
-        <ul className='navbar__icons'>
-          <li><a href='https://discord.gg/UqcHmuy2wR'><i class="fa-brands fa-discord"></i></a></li>
-          <li><a href='https://github.com/lililliililil'><i class="fa-brands fa-github"></i></a></li>
-        </ul>
-
-        <a href="#" class="navbar__toogleBtn">
-            <i class="fas fa-bars"></i>
-        </a>
-      </nav>
-      <div className='testing_info'>
-        <h1>Unfortunately, this is website is making. Please try to connect again later.</h1>
-      </div>
-    </div>
-  );
+    return (
+        <Router>
+            <Header />
+            <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/project' element={<Project />} />
+                <Route path='/sns' element={<SNS />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;

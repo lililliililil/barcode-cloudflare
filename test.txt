@@ -1,0 +1,30 @@
+        <ul className='navbar__menu'>
+          <li><a href='#'>Home</a></li>
+          <li><a href='#'>Project</a></li>
+          <li><a href='#'>SNS</a></li>
+        </ul>
+
+
+
+<Router>
+  <div>
+    <Navbar />
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route path="/project" component={Project} />
+      <Route path="/sns" component={SNS} />
+    </Switch>
+  </div>
+</Router>
+
+
+window.onload = () => {
+  const toggleBtn = document.querySelector('.navbar__toogleBtn');
+  const menu = document.querySelector('.navbar__menu');
+  const icons = document.querySelector('.navbar__icons');
+
+  toggleBtn.addEventListener('click', () => {
+      menu.classList.toggle('active');
+      icons.classList.toggle('active');
+  });
+};
