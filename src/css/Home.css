@@ -5,3 +5,18 @@
     color: gray;
     padding: 20%;
 }
+
+
+.home_img {
+    padding: 60px;
+    width: 50px;
+    height: 20px;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 770px) {
+    .home_img {
+        width: 1%;
+    }
+}
