@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Project from './components/Project';
 import SNS from './components/SNS';
 
+
 function App() {
     return (
         <Router>
@@ -14,6 +15,10 @@ function App() {
                 <Route path='/project' element={<Project />} />
                 <Route path='/sns' element={<SNS />} />
             </Routes>
+
+            <footer className='footer'>
+                <p>copyright ⓒ 2024 Barcode ALL Rights Reserved</p>
+            </footer>
         </Router>
     );
 }

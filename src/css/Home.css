@@ -1,22 +1,40 @@
-.info_making {
-    font-style: normal;
-    font-size: large;
+.App {
     text-align: center;
-    color: gray;
-    padding: 20%;
-}
+  }
+  
+  .App-header {
+    background-color: gray;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding: 20px;
+  }
+  
+  .barcode_text {
+    padding: 260px;
+  }
 
-
-.home_img {
-    padding: 60px;
-    width: 50px;
-    height: 20px;
-    object-fit: cover;
-}
-
-
-@media screen and (max-width: 770px) {
-    .home_img {
-        width: 1%;
+  .animated-text {
+    margin: 20px 0;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .animated-text h1 {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .App-header {
+      padding: 10px;
     }
-}
+  
+    .animated-text {
+      font-size: calc(8px + 2vmin);
+    }
+  }
+  
