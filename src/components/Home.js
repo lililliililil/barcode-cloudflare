@@ -20,20 +20,20 @@ const Home = () => {
         opacity: 1, 
         transform: 'translateY(0)',
         from: { opacity: 0, transform: 'translateY(-20px)' },
-        delay: 600
+        delay: 1200
       });
     
       const goalsProps = useSpring({ 
         opacity: 1, 
         transform: 'translateY(0)',
         from: { opacity: 0, transform: 'translateY(-20px)' },
-        delay: 600
+        delay: 1200
       });
 
     return (
         <div className='home'>
       <header className="App-header">
-        <animated.div ref={aboutRef} style={barcodename} className="barcode_text">
+        <animated.div ref={barcodename} style={barcodename} className="barcode_text">
             <h1><strong>Barcode</strong></h1>
             <h5>👋 Hello! nice to meet you!</h5>
         </animated.div>

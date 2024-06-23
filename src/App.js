@@ -27,6 +27,7 @@ function App() {
                     <div className='sns'>
                         <a href='mailto:g.barcode.dev@gmail.com'><li>g.barcode.dev@gmail.com</li></a>
                     </div>
+                    <h5>This is only test version</h5>
             </footer>
         </Router>
     );
