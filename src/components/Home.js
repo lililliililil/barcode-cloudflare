@@ -35,6 +35,7 @@ const Home = () => {
       <header className="App-header">
         <animated.div ref={aboutRef} style={barcodename} className="barcode_text">
             <h1><strong>Barcode</strong></h1>
+            <h5>👋 Hello! nice to meet you!</h5>
         </animated.div>
         <animated.div style={aboutProps} className="animated-text">
           <h1>ABOUT</h1>

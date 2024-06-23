@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css'
 import Header from './components/Header';
 import Home from './components/Home';
 import Project from './components/Project';
@@ -17,7 +18,15 @@ function App() {
             </Routes>
 
             <footer className='footer'>
-                <p>copyright ⓒ 2024 Barcode ALL Rights Reserved</p>
+                    <div className='copyright'>
+                        <p>copyright ⓒ 2024 Barcode ALL Rights Reserved</p>
+                    </div>
+                    <div className='slash'>
+                        <p>|</p>
+                    </div>
+                    <div className='sns'>
+                        <a href='mailto:g.barcode.dev@gmail.com'><li>g.barcode.dev@gmail.com</li></a>
+                    </div>
             </footer>
         </Router>
     );
