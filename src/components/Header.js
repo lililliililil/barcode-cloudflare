@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import '../css/Header.css';
-import { useSpring, animated } from '@react-spring/web';
-import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 
 const Header = () => {

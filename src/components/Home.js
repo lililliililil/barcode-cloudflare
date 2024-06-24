@@ -20,14 +20,14 @@ const Home = () => {
         opacity: 1, 
         transform: 'translateY(0)',
         from: { opacity: 0, transform: 'translateY(-20px)' },
-        delay: 1200
+        delay: 1500
       });
     
       const goalsProps = useSpring({ 
         opacity: 1, 
         transform: 'translateY(0)',
         from: { opacity: 0, transform: 'translateY(-20px)' },
-        delay: 1200
+        delay: 1500
       });
 
     return (

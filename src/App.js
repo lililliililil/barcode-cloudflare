@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Project from './components/Project';
 import SNS from './components/SNS';
+import NotFound from './components/NotFound';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
                 <Route path='/' element={<Home />} />
                 <Route path='/project' element={<Project />} />
                 <Route path='/sns' element={<SNS />} />
+                <Route path="/*" element={<NotFound />} />
             </Routes>
 
             <footer className='footer'>

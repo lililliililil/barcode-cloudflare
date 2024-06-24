@@ -15,7 +15,7 @@
   }
   
   .barcode_text {
-    padding: 260px;
+    padding: 220px;
   }
 
   .animated-text {
@@ -29,6 +29,11 @@
   }
   
   @media (max-width: 768px) {
+
+    .barcode_text {
+      padding: 100px;
+    }
+
     .App-header {
       padding: 10px;
     }
