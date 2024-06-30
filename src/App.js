@@ -4,17 +4,20 @@ import './App.css'
 import Header from './components/Header';
 import Home from './components/Home';
 import Project from './components/Project';
+import Blog from './components/Blog.js';
 import SNS from './components/SNS';
 import NotFound from './components/NotFound';
 
 
 function App() {
+
     return (
         <Router>
             <Header />
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/project' element={<Project />} />
+                <Route path='/Blog' element={<Blog />} />
                 <Route path='/sns' element={<SNS />} />
                 <Route path="/*" element={<NotFound />} />
             </Routes>

@@ -1,0 +1,13 @@
+// name.js
+import React from 'react';
+import '../css/name.css';
+
+const name = () => {
+    return (
+        <div className='name'>
+            <h1>name Page</h1>
+        </div>
+    );
+};
+
+export default name;

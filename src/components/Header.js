@@ -35,6 +35,7 @@ const Header = () => {
             <ul className={`navbar__menu ${isActive ? 'active' : ''}`}>
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to='/project'>Project</Link></li>
+                <li><Link to='/blog'>Blog</Link></li>
                 <li><Link to='/sns'>SNS</Link></li>
             </ul>
 
